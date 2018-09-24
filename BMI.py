@@ -3,6 +3,7 @@ import math
 weight = float(input('Input weight by \"kg\"\n'))
 height = float(input('Input Height by \"cm\"\n'))/100
 bmi = float(weight / math.pow(height,2))
+bmi = round(bmi,2)
 if bmi < 18.5:
     print('Your BMI is',bmi, ': You\'re too fucking skinny')
 elif bmi >= 18.5 and bmi < 24:
